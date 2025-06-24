@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>歡迎來到 PyDay！</h1>
-    <p>這是我們的活動首頁，你可以在這裡了解更多內容。</p>
+    <p>這是我們的社群頁面，你可以在這裡了解更多內容。</p>
   </div>
 </template>
 

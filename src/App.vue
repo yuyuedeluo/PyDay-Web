@@ -91,7 +91,7 @@ import HelloWorld from './components/HelloWorld.vue'
   width: 100%;
   height: 100%;
   object-fit: cover;    /* 自動放大縮小並填滿 */
-  object-position: center 20%;  /* 顯示圖片的中間部分 */
+  object-position: center 25%;  /* 顯示圖片的中間部分 */
   display: block;
 }
 
