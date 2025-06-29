@@ -23,7 +23,7 @@ import HelloWorld from './components/HelloWorld.vue'
   </header>
 
   <div class="banner">
-    <img src="./assets/banner.jpg" alt="Banner" />
+    <img src="./assets/banner.png" alt="Banner" />
   </div>
 
   <main class="main-content">
@@ -81,8 +81,8 @@ import HelloWorld from './components/HelloWorld.vue'
   top: 80px;
   left: 0;
   width: 100%;
-  height: 300px;        /* 限制高度為 300px */
-  overflow: hidden;     /* 裁切超出部分 */
+  height: 250px;        /* 限制高度為 X px */
+  overflow: hidden;     
   z-index: 0;
   pointer-events: none;
 }
@@ -90,25 +90,26 @@ import HelloWorld from './components/HelloWorld.vue'
 .banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;    /* 自動放大縮小並填滿 */
-  object-position: center 25%;  /* 顯示圖片的中間部分 */
+  object-fit: cover;
+  object-position: center 48%;  /* 圖片位置中心調整 */
   display: block;
 }
 
 /* 🔶 內容區域 */
 .main-content {
-  position: fixed;
-  top: 380px;
+  position: absolute;
+  top: 330px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
+  width: 80%;
   padding: 1rem 2rem;
+
 }
 
-/*
-* {
+
+/* * {
   outline: 1px solid red;
 }
-  //偵錯程式
-*/
+ 偵錯程式*/
+
 </style>
