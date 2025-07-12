@@ -1,5 +1,5 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -29,6 +29,9 @@ import HelloWorld from './components/HelloWorld.vue'
   <main class="main-content">
     <router-view />
   </main>
+  <footer>
+    <Footer />
+  </footer>
 </template>
 
 
@@ -81,7 +84,7 @@ import HelloWorld from './components/HelloWorld.vue'
   top: 80px;
   left: 0;
   width: 100%;
-  height: 250px;        /* 限制高度為 X px */
+  height: 550px;        /* 限制高度為 X px */
   overflow: hidden;     
   z-index: 0;
   pointer-events: none;
@@ -93,17 +96,20 @@ import HelloWorld from './components/HelloWorld.vue'
   object-fit: cover;
   object-position: center 48%;  /* 圖片位置中心調整 */
   display: block;
+  border-bottom: 2px solid #444;
 }
 
 /* 🔶 內容區域 */
 .main-content {
   position: absolute;
-  top: 330px;
+  top: 630px;
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
   padding: 1rem 2rem;
-
+  background-color: #181818;
+  border-left: 2px solid #444;
+  border-right: 2px solid #444;
 }
 
 
